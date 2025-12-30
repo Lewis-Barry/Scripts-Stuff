@@ -1,5 +1,4 @@
 <Configuration>
-  <!-- Remove specific language packs -->
   <Remove>
     <Product ID="LanguagePack">
       <Language ID="es-es" />
