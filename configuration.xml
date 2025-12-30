@@ -1,0 +1,19 @@
+<Configuration>
+  <!-- Remove specific language packs -->
+  <Remove>
+    <Product ID="LanguagePack">
+      <Language ID="es-es" />
+      <Language ID="pl-pl" />
+      <Language ID="ar-sa" />
+      <Language ID="da-dk" />
+      <Language ID="de-de" />
+      <Language ID="fr-fr" />
+      <Language ID="it-it" />
+      <Language ID="nb-no" />
+      <Language ID="pt-pt" />
+      <Language ID="fi-fi" />
+      <Language ID="sv-se" />
+      <Language ID="nl-nl" />
+    </Product>
+  </Remove>
+</Configuration>
