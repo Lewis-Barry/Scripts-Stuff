@@ -1,0 +1,5 @@
+// Windows Updates applied via Intune/Autopatch do not use this registry key, modifications to this path may indicate unwanted changes by third-party tooling or old GPOs.
+DeviceRegistryEvents
+| where RegistryKey has "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate"
+| where ActionType in ("RegistryValueSet", "RegistryKeyCreated", "RegistryKeyRenamed", "RegistryKeyDeleted")
+| project Timestamp, DeviceName, ActionType, RegistryKey, RegistryValueName, RegistryValueType, RegistryValueData, InitiatingProcessAccountName, InitiatingProcessFileName, InitiatingProcessCommandLine
